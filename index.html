@@ -234,18 +234,10 @@ We propose an interpolation-based approach that stitches together individual glo
           <p>
           <div class="item">
         <img src="static/images/method_mugdha_page.jpg" alt="Method"/>
-        <h2 class="subtitle has-text-centered">
-       Sign normalization for consistent scale, timing, and joint representation.
-
-        Contextual gloss vector database enables efficient gloss-to-sign retrieval.
-
-        Text to Gloss Translator: LLM with precise ISL Rule Prompt.
-
-        Stitching: Adapt FramePack (originally for long-video prediction) to interpolate between ISL gloss segments.
-                  Bidirectional sampling ensures drift-free, temporally smooth transitions.
-                  Runs on frozen Hunyuan-DIT (13B) for strong text-to-motion grounding.
-                  Enables seamless, co-articulated sign generation across glosses.
-
+        <h2 class="content has-text-justified">
+        For Indian Sign Language Production, we exploit fine-grained gloss-boundary and sign-type annotations with SOTA
+interpolation method; we show it enables smooth, context-aware visual synthesis for sign-language generation, and to support
+this, we collected a carefully curated 1,000-sentence interpreted ISL corpus - SanketVaani-1K.
         </h2>
       </div>
           </p>
@@ -263,10 +255,12 @@ We propose an interpolation-based approach that stitches together individual glo
         <div class="content has-text-justified">
           <p>
           <div class="item">
-        <img src="static/images/02_category_distribution.jpg" alt="SanketVaani-1K"/>
+        <img src="static/images/02_category_distribution.jpg"
+     alt="SanketVaani-1K"
+     style="width: 50%; height: auto; display: block; margin: 0 auto;">
         <img src="static/images/Annotation from Mugdha.png" alt="SanketVaani-1K"/>
         <img src="static/images/dataset_compare.png" alt="SanketVaani-1K"/>
-        <h2 class="subtitle has-text-centered">
+        <h2 class="content has-text-justified">
        SanketVaani-1K: 1,000 ISL sentences with precise, manually annotated gloss boundaries.
 
 Annotated by expert signers for precision and linguistic consistency.
@@ -326,24 +320,6 @@ spans 40 practical domains such as healthcare, education, banking, and civic ser
 </section> -->
 <!-- End image carousel -->
 
-<style>
-  .video-wrapper {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .video-wrapper video {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .video-wrapper .subtitle {
-    width: 100%;
-    margin-top: 0.5rem;
-    text-align: center;
-  }
-</style>
 
 
 
@@ -354,52 +330,49 @@ spans 40 practical domains such as healthcare, education, banking, and civic ser
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Comparision</h2>
+      <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
-  <div class="video-wrapper">
-      <video autoplay controls muted loop>
-        <source src="static/videos/Dream.mp4" type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Dreammover interpolation
-          </h2>
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/Dream.mp4"
+
+            type="video/mp4">
+          </video>
+           <h2 class="subtitle has-text-centered">
+             Dreammover interpolation
+        </h2>
         </div>
-      </div>
-
-       <div class="item item-video2">
-  <div class="video-wrapper">
-    <video autoplay controls muted loop>
-      <source src="static/videos/BVFI.mp4" type="video/mp4">
-    </video>
-    <h2 class="subtitle has-text-centered">
-      BIM VFI interpolation
-    </h2>
-  </div>
-</div>
-
-<div class="item item-video3">
-  <div class="video-wrapper">
-    <video autoplay controls muted loop>
-      <source src="static/videos/VFI.mp4" type="video/mp4">
-    </video>
-    <h2 class="subtitle has-text-centered">
-      VFI interpolation
-    </h2>
-  </div>
-</div>
-
-<div class="item item-video4">
-  <div class="video-wrapper">
-    <video autoplay controls muted loop>
-      <source src="static/videos/Presentation Video.mp4" type="video/mp4">
-    </video>
-    <h2 class="subtitle has-text-centered">
-      OUR Pipeline with FramePack
-    </h2>
-  </div>
-</div>
-
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/BVFI.mp4"
+            type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+             BIM VFI interpolation
+        </h2>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/VFI.mp4"
+            type="video/mp4">
+          </video>
+            <h2 class="subtitle has-text-centered">
+             VFI interpolation
+        </h2>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/Presentation Video.mp4"
+            type="video/mp4">
+          </video>
+            <h2 class="subtitle has-text-centered">
+             OUR Pipeline with FramePack
+        </h2>
+        </div>
       </div>
     </div>
   </div>
